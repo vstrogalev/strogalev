@@ -1,0 +1,78 @@
+@media (max-width: 1500px) {
+    .sidepanel {
+        left: 10px;
+    }
+    .promo__title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .btns__btn {
+        height: 40px;
+        a {
+            line-height: 40px;
+        }
+    }
+};
+
+@media (max-width: 1024px) {
+    .promo__title {
+        width: 40%;
+        font-size: 25px;
+        line-height: 28px;
+    };
+};
+
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+    };
+};
+
+@media (max-width: 426px) {
+    .sidepanel {
+        display: none;
+    }
+    .hamburger {
+        top:auto;
+        bottom: 20px;
+        span {
+            background: rgba(151, 178, 245, 0.72);
+        }
+    }
+    .promo {
+        padding-top: 10px;
+        &__subtitle {
+            font-size: 12px;
+            &::before {
+                width: 20px;
+                height: 20px;
+                top: 1px;
+            }
+        }
+        &__title {
+            width: 100%;
+            margin-top: 3px;
+            font-size: 18px;
+            line-height: 25px;
+            br {
+                display: none;
+            }
+        }
+    }
+    .btns {
+        display: none;
+    };
+    .menu {
+        &__block {
+            width: 70%;
+        }
+        &__link {
+            font-size: 22px;
+            line-height: 31px;
+        }
+        &__close {
+            top: auto;
+            bottom: 25px;
+        }
+    }
+};
