@@ -1,0 +1,21 @@
+@mixin circle {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border: none;
+        top: -7px;
+        left: 0;
+        border-radius: 100%;
+        background: $main-color;
+        z-index: -1;
+    }
+}
+
+@mixin fillSvg {
+    svg path {
+        fill: #fff;
+    }
+}
