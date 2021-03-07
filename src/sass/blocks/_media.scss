@@ -42,6 +42,16 @@
             grid-template-columns: repeat(2,40%);
         }
     }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(3, 270px);
+            justify-content: space-around;
+        }
+        &__levels {
+            grid-template-columns: repeat(2, 350px);
+            justify-content: space-around;
+        }
+    }
 };
 
 @media (max-width: 769px) {
@@ -64,6 +74,15 @@
     .benefit {
         &__item {
             margin-top: 20px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(2, 270px);
+            justify-content: space-around;
+        }
+        &__levels {
+            grid-template-columns: repeat(2, 250px);
         }
     }
 };
@@ -152,6 +171,15 @@
         }
         &__column {
             margin-top: 20px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: minmax(320px, auto);
+        }
+        &__levels {
+            grid-template-columns: 1fr;
+            row-gap: 40px;
         }
     }
 };
