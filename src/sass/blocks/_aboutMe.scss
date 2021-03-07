@@ -1,0 +1,87 @@
+.aboutMe {
+    min-height: 720px;
+    padding-top: 120px;
+    padding-right: 100px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 400px 670px;
+        grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+        grid-auto-rows: minmax(245px, auto);
+        grid-template-areas: 
+        "aboutMe__img aboutMe__header"
+        "aboutMe__img aboutMe__skills";
+        column-gap: 70px;
+        row-gap: 40px;
+    }
+    &__img {
+        grid-area: aboutMe__img;
+        img {
+            width: 400px;
+        }
+    }
+    &__header {
+        grid-area: aboutMe__header;
+        padding-top: 6px;
+        .divider {
+            margin-top: 4px;
+        }
+    }
+    &__title {
+        padding-left: 12px;
+        @include circle;
+    }
+    &__text {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 21px; 
+    }
+    &__skills {
+        grid-area: aboutMe__skills;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 260px);
+        grid-auto-rows: 1fr;
+        justify-content: start;
+        column-gap: 50px;
+        row-gap: 20px;
+    }
+    &__skill {
+        display: grid;
+        grid-template-columns: 40px 200px;
+        grid-template-rows: 21px 90px;
+        grid-auto-rows: 116px;
+        grid-template-areas: 
+        "ico title"
+        "ico descr";
+        justify-content: flex-start;
+        column-gap: 20px;
+        row-gap: 6px;
+
+        &-ico {
+            grid-area: ico;
+            width: 25;
+            padding-left: 15px;
+            padding-top: 15px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                border-radius: 100%;
+                top: 0;
+                left: 0;
+                background-color: $main-color;
+            }
+        }
+        &-title {
+            grid-area: title;
+        }
+        &-descr {
+            grid-area: descr;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+}
