@@ -23,15 +23,55 @@
         font-size: 25px;
         line-height: 28px;
     };
+    .aboutMe {
+        &__wrapper {
+            grid-template-columns: 30% 70%;
+            grid-template-rows: minmax(50%, auto) minmax(50%, auto);
+            grid-auto-rows: minmax(50%, auto);
+            column-gap: 20px;
+        }
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .benefit {
+        padding-top: 70px;
+        &__wrapper {
+            grid-template-columns: repeat(2,40%);
+        }
+    }
 };
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .container {
         width: 85%;
     };
+    .aboutMe {
+        padding-top: 80px;
+        padding-right: 0;
+        &__skills {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 10px;
+        }
+        &__skill {
+            grid-template-columns: 40px 1fr;
+            column-gap: 10px;
+        }
+    }
+    .benefit {
+        &__item {
+            margin-top: 20px;
+        }
+    }
 };
 
 @media (max-width: 426px) {
+    .container {
+        width: 90%;
+    };
     .sidepanel {
         display: none;
     }
@@ -53,7 +93,7 @@
             }
         }
         &__title {
-            width: 100%;
+            width: 65%;
             margin-top: 3px;
             font-size: 18px;
             line-height: 25px;
@@ -76,6 +116,42 @@
         &__close {
             top: auto;
             bottom: 25px;
+        }
+    };
+    .aboutMe {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-auto-rows: auto;
+            grid-template-areas: 
+            "aboutMe__header"
+            "aboutMe__img" 
+            "aboutMe__skills";
+            column-gap: 0;
+            row-gap: 10px;
+        }
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+        &__skills {
+            margin-top: 20px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+        &__skill {
+            grid-template-rows: 21px minmax(60px, auto);
+        }
+    }
+    .benefit {
+        padding-top: 70px;
+        &__wrapper {
+            margin-top: 0;
+            grid-template-columns: 1fr;
+        }
+        &__column {
+            margin-top: 20px;
         }
     }
 };

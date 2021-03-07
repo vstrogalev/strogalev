@@ -24,6 +24,7 @@
         padding-top: 6px;
         .divider {
             margin-top: 4px;
+            margin-left: 0;
         }
     }
     &__title {
@@ -58,7 +59,7 @@
 
         &-ico {
             grid-area: ico;
-            width: 25;
+            width: 25px;
             padding-left: 15px;
             padding-top: 15px;
             position: relative;

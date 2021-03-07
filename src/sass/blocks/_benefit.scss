@@ -1,0 +1,100 @@
+.benefit {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        @include circle;
+        &::before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 6px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                top: 8px;
+                left: -35px;
+                background: $main-color;
+            }
+        }
+        ul {
+            list-style-type: none;
+            position: relative;
+        }
+        li {
+            &::after {
+                content: '';
+                position: absolute;
+                top: -53px;
+                left: -28px;
+                width: 1px;
+                height: calc(100% + 45px);
+                background-color: #000;
+            }
+        }
+    }
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 0 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__item {
+        margin-top: 45px;
+        &-head {
+            position: relative;
+            padding-left: 56px;
+            h4 {
+                margin-bottom: 0;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 27px;
+                top: 18px;
+                left: -27px;
+                background-color: #000;
+            }
+        }
+        &-icon {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                top: 0;
+                left: 0;
+                border-radius: 100%;
+                background: $main-color;
+            }
+            img {
+                position: absolute;
+                top: 15px;
+                left: 20px;
+            }
+        }
+        &-speciality {
+            margin-top: 2px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-text {
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
