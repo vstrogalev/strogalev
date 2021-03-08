@@ -90,6 +90,11 @@
             grid-template-columns: repeat(2, 250px);
         }
     }
+    .contacts {
+        &__form {
+            column-gap: 10px;
+        }
+    }
 };
 
 @media (max-width: 426px) {
@@ -216,6 +221,13 @@
         }
         &__textarea {
             grid-column: 1 / 1;
+        }
+        &__triggers {
+            grid-template-columns: auto;
+            grid-column: 1;
+        }
+        &__policy {
+            margin-top: 20px;
         }
     }
 };

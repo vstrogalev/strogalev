@@ -62,11 +62,11 @@
 			</div>
 			<nav>
 				<ul class="menu__list">
-					<li class="menu__link"><a href="#">Про меня</a></li>
-					<li class="menu__link"><a href="#">Мой опыт</a></li>
-					<li class="menu__link"><a href="#">Мои навыки</a></li>
-					<li class="menu__link"><a href="#">Мои работы</a></li>
-					<li class="menu__link"><a href="#">Контакты</a></li>
+					<li class="menu__link"><a href="#aboutMe">Про меня</a></li>
+					<li class="menu__link"><a href="#experience">Мой опыт</a></li>
+					<li class="menu__link"><a href="#mySkills">Мои навыки</a></li>
+					<li class="menu__link"><a href="#myPortfolio">Мои работы</a></li>
+					<li class="menu__link"><a href="#contacts">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="menu__social">
@@ -118,13 +118,13 @@
 			<div class="title title_fz16 promo__subtitle">Меня зовут Вячеслав Строгалев</div>
 			<h1 class="title title_fz48 promo__title">Я живу в Санкт-Петербурге<br>и увлекаюсь web-разработкой</h1>
 			<div class="btns">
-				<div class="btn btn_active"><a href="#">Портфолио</a></div>
-				<div class="btn"><a href="#">Про меня</a></div>
+				<div class="btn btn_active"><a href="#myPortfolio">Портфолио</a></div>
+				<div class="btn"><a href="#aboutMe">Про меня</a></div>
 			</div>
 		</div>
 	</section>
 
-	<section class="aboutMe">
+	<section id="aboutMe" class="aboutMe">
 		<div class="container">
 			<div class="aboutMe__wrapper">
 				<div class="aboutMe__img">
@@ -186,7 +186,7 @@
 		</div>
 	</section>
 
-	<section class="benefit">
+	<section id="experience" class="benefit">
 		<div class="container">
 			<h2 class="title title_fz16 title__section-title">Опыт</h2>
 			<div class="title title_fz36 title__section-subtitle">Мой background</div>
@@ -250,7 +250,7 @@
 		</div>
 	</section>
 
-	<section class="skills">
+	<section id="mySkills" class="skills">
 		<div class="container">
 			<h2 class="title title_fz16 title__section-title">Навыки</h2>
 			<div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
@@ -287,7 +287,7 @@
 				</article>
 				<article class="skills__item">
 					<div class="skills__item-ico">
-						<img src="icons/skills/git.svg" alt="git">
+						<img src="icons/skills/icons64-github.svg" alt="git">
 					</div>
 					<h3 class="skills__item-name">GIT</h3>
 					<p class="skills__item-descr">Система контроля версий. Позволяет обеспечить эффективную работу команды разработки при разделении кода между разными участниками.</p>
@@ -330,7 +330,7 @@
 		</div>
 	</section>
 
-	<section class="portfolio">
+	<section id="myPortfolio" class="portfolio">
 		<div class="container">
 			<h2 class="title title_fz16 title__section-title">Портфолио</h2>
 			<div class="title title_fz36 title__section-subtitle">Мои работы</div>
@@ -338,12 +338,12 @@
 
 			<div class="portfolio__wrapper">
 				<a href="#" class="portfolio__item">
-					<img src="img/works/uber.jpg" alt="uber">
+					<div><img src="img/works/uber.jpg" alt="uber"></div>
 					<div class="portfolio__item-descr">Первый мой самый простой лендинг. Интерактивности нет.
 					</div>
 				</a>
 				<a href="#" class="portfolio__item">
-					<img src="img/works/pulse.jpg" alt="pulsometer">
+					<div><img src="img/works/pulse.jpg" alt="pulsometer"></div>
 					<div class="portfolio__item-descr">Лендинг с меню, табами, анимацией и небольшой интерактивностью.
 					</div>
 				</a>
@@ -351,7 +351,7 @@
 		</div>
 	</section>
 
-	<section class="contacts">
+	<section id="contacts" class="contacts">
 		<div class="container">
 			<div class="contacts__wrapper">
 				<div class="contacts__img">
@@ -386,7 +386,15 @@
 							<label for="message">Ваше сообщение</label>
 						</div>
 
-						<button class="contacts__btn btn btn_active">Отправить сообщение</button>
+						<div class="contacts__triggers">
+							<button class="contacts__btn btn btn_active">Отправить сообщение</button>
+							<div class="contacts__policy">
+								<input required type="checkbox">
+								<span>
+									Я согласен(а) с <a target="_blank" href="/policy.html">политикой конфиденциальности</a>
+								</span>
+							</div>
+						</div>
 					</form>
 				</div>
 			</div>

@@ -17,6 +17,7 @@
         grid-area: aboutMe__img;
         img {
             width: 400px;
+            object-fit: cover;
         }
     }
     &__header {
