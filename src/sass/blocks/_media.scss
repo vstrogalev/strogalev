@@ -52,6 +52,11 @@
             justify-content: space-around;
         }
     }
+    .contacts {
+        &__img {
+            display: none;
+        }
+    }
 };
 
 @media (max-width: 769px) {
@@ -180,6 +185,37 @@
         &__levels {
             grid-template-columns: 1fr;
             row-gap: 40px;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template: minmax(330px, auto)/1fr;
+            grid-auto-rows: minmax(330px, auto);
+        }
+    }
+    .contacts {
+        &__title {
+            text-align: center;
+            &::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        .divider {
+            margin: 4px auto;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+            padding: 0 5px;
+        }
+        &__form {
+            grid-template: 45px 45px 153px 45px / 1fr;
+        }
+        &__textarea {
+            grid-column: 1 / 1;
         }
     }
 };

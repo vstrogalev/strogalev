@@ -8,4 +8,11 @@ hamburger.addEventListener('click', () => {
 
 menuClose.addEventListener('click', () => {
     menu.classList.remove('active');
+});
+
+const levelItems = document.querySelectorAll('.skills__level-percent'),
+    levelProgressFront = document.querySelectorAll('.skills__level-progressFront');
+
+levelItems.forEach((item, i) => {
+    levelProgressFront[i].style.width = item.innerHTML;
 })
