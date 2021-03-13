@@ -100,7 +100,10 @@
 @media (max-width: 426px) {
     .container {
         width: 90%;
-    };
+    }
+    .title_fz36 {
+        font-size: 30px;
+    }
     .sidepanel {
         display: none;
     }
@@ -108,7 +111,8 @@
         top:auto;
         bottom: 20px;
         span {
-            background: rgba(151, 178, 245, 0.72);
+            background: #fff;
+            box-shadow: 0 0 5px #000;
         }
     }
     .promo {
@@ -122,13 +126,10 @@
             }
         }
         &__title {
-            width: 65%;
-            margin-top: 3px;
-            font-size: 18px;
-            line-height: 25px;
-            br {
-                display: none;
-            }
+            width: 70%;
+            margin-top: 13px;
+            font-size: 20px;
+            line-height: 29px;
         }
     }
     .btns {
@@ -137,6 +138,7 @@
     .menu {
         &__block {
             width: 70%;
+            padding-top: 40px;
         }
         &__link {
             font-size: 22px;
@@ -144,7 +146,10 @@
         }
         &__close {
             top: auto;
-            bottom: 25px;
+            bottom: 100px;
+        }
+        &__social {
+            bottom: 100px;
         }
     };
     .aboutMe {

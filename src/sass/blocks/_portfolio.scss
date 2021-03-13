@@ -4,15 +4,14 @@
     &__wrapper {
         margin-top: 60px;
         display: grid;
-        grid-template: 330px /repeat(4,280px);
-        grid-auto-rows: 330px;
-        gap: 5px;
+        grid-template: minmax(330px, auto)/repeat(auto-fit,280px);
+        grid-auto-rows: minmax(330px, auto);
+        gap: 20px;
     }
     &__item {
         transition: all 0.5s;
         &-descr {
-            margin-top: 10px;
-            padding: 0 5px;
+            padding: 10px 5px;
             color: #000;
             text-align: center;
             font-weight: 500;
