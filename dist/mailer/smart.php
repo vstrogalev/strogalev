@@ -11,17 +11,17 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = '';  // Specify main and backup SMTP servers
+$mail->Host = 'mail.strogalev.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '';                 // Наш логин
-$mail->Password = '';                           // Наш пароль от ящика
+$mail->Username = 'webmaster@strogalev.com';                 // Наш логин
+$mail->Password = 'Jfm315102';                           // Наш пароль от ящика
 // $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->SMTPAutoTLS = false;
 $mail->SMTPSecure = false;
 $mail->Port = 25;				// $mail->Port = 465;    // TCP port to connect to
  
-$mail->setFrom('', 'MyHosting');   // От кого письмо 
-$mail->addAddress('');     // Add a recipient
+$mail->setFrom('webmaster@strogalev.com', 'MyHosting');   // От кого письмо 
+$mail->addAddress('strogalev@hotmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
