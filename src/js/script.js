@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	// hamburger -> menu open close
 	const hamburger = document.querySelector('.hamburger'),
 		menu = document.querySelector('.menu'),
-		menuClose = document.querySelector('.menu__close');
+		menuClose = document.querySelector('.menu__close'),
 		overlayClose = document.querySelector('.menu__overlay');
 
 	hamburger.addEventListener('click', () => {
@@ -71,5 +71,5 @@ document.addEventListener('DOMContentLoaded', function () {
 				policyAgree: "Пожалуйста, согласитесь с политикой конфиденциальности"
 			}
 		});
-	};
+	}
 });
