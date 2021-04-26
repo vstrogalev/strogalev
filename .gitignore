@@ -8,6 +8,10 @@
 
 # production
 /build
+/dist/blogen
+/dist/glopt
+/dist/glozzom
+/dist/mizuxe_book
 
 # misc
 .DS_Store
