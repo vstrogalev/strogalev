@@ -12,6 +12,7 @@
 /dist/glopt
 /dist/glozzom
 /dist/mizuxe_book
+/dist/mailer/smart.php
 
 # misc
 .DS_Store
