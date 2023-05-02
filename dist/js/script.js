@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	$('#contactForm').on('submit', function(e){
+		return false;
 		e.preventDefault();
 		$.ajax({
 			type: "POST",
