@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		levelProgressFront[i].style.width = item.innerHTML;
 	});
 
-	$('#contactForm').on('submit', function(e){
+	document.querySelector('#contactForm').addEventListener('submit', function(e){
 		return false;
 		e.preventDefault();
 		$.ajax({
@@ -38,39 +38,39 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 		return false;
 	});
-	
+
 	validateForm('#contactForm');
 
-	// Form validation 
+	// Form validation
 	function validateForm(formSelector) {
-		$(formSelector).validate({
-			rules: {
-				userName: {
-					required: true,
-					minlength: 2
-				},
-				userMessage: {
-					required: true,
-					minlength: 5
-				},
-				userEmail: {
-					required: true,
-					email: true
-				},
-				policyAgree: "required"
-			},
-			messages: {
-				userName: {
-					required: "Пожалуйста, введите свое имя",
-					minlength: jQuery.validator.format("Введите {0} символа!")
-				},
-				userEmail: {
-					required: "Пожалуйста, введите свою почту",
-					email: "Неправильно введен адрес почты"
-				},
-				userMessage: "Пожалуйста, введите своё сообщение",
-				policyAgree: "Пожалуйста, согласитесь с политикой конфиденциальности"
-			}
-		});
+		// document.querySelector(formSelector).validate({
+		// 	rules: {
+		// 		userName: {
+		// 			required: true,
+		// 			minlength: 2
+		// 		},
+		// 		userMessage: {
+		// 			required: true,
+		// 			minlength: 5
+		// 		},
+		// 		userEmail: {
+		// 			required: true,
+		// 			email: true
+		// 		},
+		// 		policyAgree: "required"
+		// 	},
+		// 	messages: {
+		// 		userName: {
+		// 			required: "Пожалуйста, введите свое имя",
+		// 			minlength: jQuery.validator.format("Введите {0} символа!")
+		// 		},
+		// 		userEmail: {
+		// 			required: "Пожалуйста, введите свою почту",
+		// 			email: "Неправильно введен адрес почты"
+		// 		},
+		// 		userMessage: "Пожалуйста, введите своё сообщение",
+		// 		policyAgree: "Пожалуйста, согласитесь с политикой конфиденциальности"
+		// 	}
+		// });
 	}
 });
