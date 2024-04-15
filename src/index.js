@@ -1,3 +1,5 @@
+import './sass/style.scss';
+
 document.addEventListener('DOMContentLoaded', function () {
 	// hamburger -> menu open close
 	const hamburger = document.querySelector('.hamburger'),
