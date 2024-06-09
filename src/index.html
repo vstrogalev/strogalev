@@ -95,14 +95,14 @@
     <span></span>
   </div>
 
-  <div id="russian">
+  <!-- <div id="russian">
     <button class="russian">
       <span class="circle" aria-hidden="true">
         <span class="icon arrow"></span>
       </span>
       <a class="button-text" href="index_rus.html">Russian</a>
     </button>
-  </div>
+  </div> -->
 
   <aside class="sidepanel">
     <a href="https://www.facebook.com/strogalev/" class="sidepanel__link">
@@ -336,20 +336,32 @@
         </article>
         <article class="skills__item">
           <div class="skills__item-ico">
-            <img src="<%=require('./icons/skills/jquery.svg')%>" alt="Jquery">
-          </div>
-          <h3 class="skills__item-name">Jquery</h3>
-          <p class="skills__item-descr">The Jquery library will allow to speed up development. Taking into consideration
-            the newest JavaScript comprises the same functionality as jQuery I'm not prone to use it without real needs
-          </p>
-        </article>
-        <article class="skills__item">
-          <div class="skills__item-ico">
             <img src="<%=require('./icons/skills/icons64-github.svg')%>" alt="git">
           </div>
           <h3 class="skills__item-name">GIT</h3>
           <p class="skills__item-descr">Version Control System. Allows to ensure efficient work of the development team
             when the code is divided between different developers.</p>
+        </article>
+        <article class="skills__item">
+          <div class="skills__item-ico">
+            <img src="<%=require('./icons/skills/react.svg')%>" alt="react">
+          </div>
+          <h3 class="skills__item-name">React</h3>
+          <p class="skills__item-descr">React is a free and open-source front-end JavaScript library for building user interfaces based on components.</p>
+        </article>
+        <article class="skills__item">
+          <div class="skills__item-ico">
+            <img src="<%=require('./icons/skills/redux.svg')%>" alt="redux">
+          </div>
+          <h3 class="skills__item-name">Redux</h3>
+          <p class="skills__item-descr">Redux is an open-source JavaScript library for managing and centralizing application state.</p>
+        </article>
+        <article class="skills__item">
+          <div class="skills__item-ico">
+            <img src="<%=require('./icons/skills/typescript.svg')%>" alt="Typescript">
+          </div>
+          <h3 class="skills__item-name">Typescript</h3>
+          <p class="skills__item-descr">TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript.</p>
         </article>
       </div>
       <div class="skills__levels">
@@ -396,6 +408,11 @@
       <div class="divider"></div>
 
       <div class="portfolio__wrapper">
+        <a href="https://www.tictactoe.strogalev.com/" class="portfolio__item">
+          <div><img src="<%=require('./img/works/tik_tak_toe.jpg')%>" alt="tik-tak-toe game"></div>
+          <div class="portfolio__item-descr">The tik-tak-toe game on React
+          </div>
+        </a>
         <a href="http://www.strogalev.com/blogen" class="portfolio__item">
           <div><img src="<%=require('./img/works/blogen.jpg')%>" alt="blogen"></div>
           <div class="portfolio__item-descr">Multi page admin console with modals, forms, tables etc. based on Boostrap
