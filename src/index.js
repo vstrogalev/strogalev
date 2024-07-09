@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		levelProgressFront[i].style.width = item.innerHTML;
 	});
 
-	document.querySelector('#contactForm').addEventListener('submit', function(e){
+// contact form
+/*	document.querySelector('#contactForm').addEventListener('submit', function(e){
 		return false;
 		e.preventDefault();
 		$.ajax({
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	validateForm('#contactForm');
+/*
 
 	// Form validation
 	function validateForm(formSelector) {
