@@ -46,35 +46,38 @@ document.addEventListener('DOMContentLoaded', function () {
 /*
 
 	// Form validation
-	function validateForm(formSelector) {
-		// document.querySelector(formSelector).validate({
-		// 	rules: {
-		// 		userName: {
-		// 			required: true,
-		// 			minlength: 2
-		// 		},
-		// 		userMessage: {
-		// 			required: true,
-		// 			minlength: 5
-		// 		},
-		// 		userEmail: {
-		// 			required: true,
-		// 			email: true
-		// 		},
-		// 		policyAgree: "required"
-		// 	},
-		// 	messages: {
-		// 		userName: {
-		// 			required: "Пожалуйста, введите свое имя",
-		// 			minlength: jQuery.validator.format("Введите {0} символа!")
-		// 		},
-		// 		userEmail: {
-		// 			required: "Пожалуйста, введите свою почту",
-		// 			email: "Неправильно введен адрес почты"
-		// 		},
-		// 		userMessage: "Пожалуйста, введите своё сообщение",
-		// 		policyAgree: "Пожалуйста, согласитесь с политикой конфиденциальности"
-		// 	}
-		// });
+	/*
+function validateForm(formSelector) {
+. document.querySelector(formSelector).validate({
+		.  	rules: {
+		.  		userName: {
+		.  			required: true,
+		.  			minlength: 2
+		.  		},
+		.  		userMessage: {
+		.  			required: true,
+		.  			minlength: 5
+		.  		},
+		.  		userEmail: {
+		.  			required: true,
+		.  			email: true
+		.  		},
+		.  		policyAgree: "required"
+		.  	},
+		.  	messages: {
+		.  		userName: {
+		.  			required: "Пожалуйста, введите свое имя",
+		.  			minlength: jQuery.validator.format("Введите {0} символа!")
+		.  		},
+		.  		userEmail: {
+		.  			required: "Пожалуйста, введите свою почту",
+		.  			email: "Неправильно введен адрес почты"
+		.  		},
+		.  		userMessage: "Пожалуйста, введите своё сообщение",
+		 		. policyAgree: "Пожалуйста, согласитесь с политикой конфиденциальности"
+		. }
+		});
 	}
 });
+*/
+
